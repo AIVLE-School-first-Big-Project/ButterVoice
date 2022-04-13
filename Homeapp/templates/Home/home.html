@@ -1,13 +1,15 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-<body>h</body>
 
 <div style="text-align: center">
-    <img src="{% static 'image/img_logo.png' %}"/>
+    <img class="main_logo" src="{% static 'image/img_logo.png' %}"/>
 </div>
 <div class="container">
     <div class="row">
         <div style="text-align: center">
+            <div class="col">
+                <img src="{% static 'image/img_name.png' %}"/>
+            </div>
             <div class="col">
                 <button onclick="location.href='../signin'">로그인</button>
             </div>
