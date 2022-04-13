@@ -1,9 +1,25 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/role.css' %}"/>
 
-<div>
-    <img src="{% static 'image/img_cu.png' %}" onclick="location.href='../signup'"/>
+<header class="header">
+    <img src="{% static 'image/img_logo.png' %}" style="height:50; float:left" onclick="location.href='/Home/home'"/>
+    <img src="{% static 'image/img_name.png' %}" style="height:50; float:left" onclick="location.href='/Home/home'"/>
+</header>
+<div style="text-align: center; float: bottom">
+    <div class="main_text">회원 선택</div>
 </div>
-    <img src="{% static 'image/img_co.png' %}" onclick="location.href='../signup'"/>
-<div>
+<div style="text-align: center">
+    <div class="select">
+        <div class="button">
+            <div class="text">고객</div>
+            <img class="image" src="{% static 'image/img_cu.png' %}" onclick="location.href='../signup'"/>
+        </div>
+    </div>
+    <div class="select">
+        <div class="button">
+            <div class="text">상담사</div>
+            <img class="image" src="{% static 'image/img_co.png' %}" onclick="location.href='../signup'"/>
+        </div>
+    </div>
 </div>

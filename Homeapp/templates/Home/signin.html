@@ -1,16 +1,30 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/signin.css' %}"/>
 
-<body bgcolor='black'></body>
-<header class="header" style="height: 50;">
+<header class="header">
     <img src="{% static 'image/img_logo.png' %}" style="height:50; float:left"/>
     <img src="{% static 'image/img_name.png' %}" style="height:50; float:left"/>
 </header>
-<h2>
-    아이디 : 
-    <input type="text"/>
-    <br>비밀번호 : 
-    <input type="text"/>
-</h2>
-<button onclick="location.href='../home'">로그인</button>
-<button onclick="location.href='../role'">회원가입</button>
+<div class="container">
+    <div class="row">
+        <div style="text-align: center; margin-top: 50px">
+            <div class="col">
+                <div class="textArea">
+                    <div class="text">아이디</div>
+                    <input type="text"/>
+                </div>
+            </div>
+            <div class="col">
+                <div class="textArea">
+                    <div class="text">비밀번호</div>
+                    <input type="text"/>
+                </div>
+            </div>
+            <div class="col" style="margin-top: 40px">
+                <button class='button' onclick="opener.location.replace('../role'); self.close()">로그인</button>
+                <button class='button' onclick="opener.location.replace('../role'); self.close()">회원가입</button>
+            </div>
+        </div>
+    </div>
+</div>
