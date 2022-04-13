@@ -1,3 +1,18 @@
+{% load static %}
+<style>
+    header {
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: gray;
+        border: 2px solid orange;
+    }
+</style>
+<body bgcolor='black'></body>
+<header style="height: 50">
+    <img src="{% static 'image/img_logo.png' %}" style="height:50"/>
+    ButterVoice
+</header>
 <h2>
     아이디 : 
     <input type="text"/>

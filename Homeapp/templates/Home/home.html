@@ -1,2 +1,18 @@
-<button onclick="location.href='../signin'">로그인</button>
-<button onclick="location.href='../role'">회원가입</button>
+{% load static %}
+<body bgcolor='black'></body>
+
+<div style="text-align: center">
+    <img src="{% static 'image/img_logo.png' %}"/>
+</div>
+<div class="container">
+    <div class="row">
+        <div style="text-align: center">
+            <div class="col">
+                <button onclick="location.href='../signin'">로그인</button>
+            </div>
+            <div class="col">
+                <button onclick="location.href='../role'">회원가입</button>
+            </div>
+        </div>
+    </div>
+</div>
