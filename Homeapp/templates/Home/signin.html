@@ -1,19 +1,10 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 
-<style>
-    header {
-        position: sticky;
-        top: 0;
-        padding: 5px;
-        background-color: gray;
-        border: 2px solid orange;
-    }
-</style>
 <body bgcolor='black'></body>
-<header style="height: 50;">
+<header class="header" style="height: 50;">
     <img src="{% static 'image/img_logo.png' %}" style="height:50; float:left"/>
-    <div style="font-size:30">ButterVoice</div>
+    <img src="{% static 'image/img_name.png' %}" style="height:50; float:left"/>
 </header>
 <h2>
     아이디 : 

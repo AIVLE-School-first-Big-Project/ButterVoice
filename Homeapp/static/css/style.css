@@ -1,5 +1,19 @@
 body {
     background-color: black;
+    color: white;
+}
+
+header {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid orange;
+}
+
+.font {
+    color: white;
 }
 
 .main_logo {
